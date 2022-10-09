@@ -45,7 +45,9 @@ const useMercadoPago = ({ type }: { type: 'payment' | 'subscription' }) => {
 			.then(data => {
 				console.log(data)
 				setData(data)
-				createCheckoutButton(mercadoPago, data.id)
+				if (type === 'payment') {
+					createCheckoutButton(mercadoPago, data.id)
+				}
 			})
 			.catch(err => {
 				console.warn(err)
