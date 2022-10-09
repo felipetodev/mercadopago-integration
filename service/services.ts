@@ -1,5 +1,5 @@
 import type { NextApiRequest } from 'next'
-import { countryOpts } from '../mock'
+import { countryOpts, domain } from '../mock'
 const URI = 'https://api.mercadopago.com'
 const API_PREFERENCES = `${URI}/checkout/preferences`
 const API_PREAPPROVAL = `${URI}/preapproval`
@@ -12,9 +12,9 @@ const service = (req: NextApiRequest) => ({
 			payer_email: payerEmail,
 			items,
 			back_urls: {
-				success: '/success',
-				pending: '/pending',
-				failure: '/failure'
+				success: `${domain}/success`,
+				pending: `${domain}/pending`,
+				failure: `${domain}/failure`
 			}
 		}
 		const payment = await fetch(API_PREFERENCES, {
@@ -41,7 +41,7 @@ const service = (req: NextApiRequest) => ({
 				transaction_amount: 1000,
 				currency_id: countryOpts.currency
 			},
-			back_url: 'https://www.mercadopago.com.ar',
+			back_url: `${domain}/subscription`,
 			payer_email: payerEmail
 		}
 		const subscription = await fetch(API_PREAPPROVAL, {

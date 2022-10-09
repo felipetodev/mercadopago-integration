@@ -50,3 +50,5 @@ export const countryOpts = {
 	locale: 'es-CL',
 	currency: 'CLP'
 }
+
+export const domain = 'https://mercadopago-integration.vercel.app'
