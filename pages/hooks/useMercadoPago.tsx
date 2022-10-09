@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { cart, customer } from '../../mock'
+import { cart, countryOpts, customer } from '../../mock'
 import { PUBLIC_KEY } from '../../service/services'
 import type { Payment } from '../../types'
 
@@ -13,7 +13,7 @@ const createCheckoutButton = (mp: any, preferenceId: string) => {
 	})
 }
 
-const useMercadoPago = ({ type }: { type: string }) => {
+const useMercadoPago = ({ type }: { type: 'payment' | 'subscription' }) => {
 	const [mercadoPago, setMercadoPago] = useState<any>(null)
 	const [data, setData] = useState<Payment | any>(null)
 	const [loading, setLoading] = useState<boolean>(false)
@@ -24,7 +24,7 @@ const useMercadoPago = ({ type }: { type: string }) => {
 	const handleLoadScript = () => {
 		console.log('MP Script Loaded')
 		const mp = new window.MercadoPago(PUBLIC_KEY, {
-			locale: 'es-CL'
+			locale: countryOpts.locale
 		})
 		setMercadoPago(mp)
 	}

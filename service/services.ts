@@ -1,4 +1,5 @@
 import type { NextApiRequest } from 'next'
+import { countryOpts } from '../mock'
 const URI = 'https://api.mercadopago.com'
 const API_PREFERENCES = `${URI}/checkout/preferences`
 const API_PREAPPROVAL = `${URI}/preapproval`
@@ -38,7 +39,7 @@ const service = (req: NextApiRequest) => ({
 				frequency: 1,
 				frequency_type: 'months',
 				transaction_amount: 1000,
-				currency_id: 'CLP'
+				currency_id: countryOpts.currency
 			},
 			back_url: 'https://www.mercadopago.com.ar',
 			payer_email: payerEmail
