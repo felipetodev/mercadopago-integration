@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://i.ibb.co/2ynyv02/me-pago.webp" alt="mercadopago" />
-  <h1 align="center">MercadoPago Integration</h1>
+  <h1 align="center">MercadoPago Checkout Pro Integration</h1>
 </p>
 
 ## Installation
