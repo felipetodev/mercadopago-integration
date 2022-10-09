@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { useState } from 'react'
-import useMercadoPago from './hooks/useMercadoPago'
+import useMercadoPago from '../hooks/useMercadoPago'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
 
