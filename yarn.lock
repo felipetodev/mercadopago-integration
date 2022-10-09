@@ -574,7 +574,7 @@
     "minimatch" "^3.1.2"
     "semver" "^6.3.0"
 
-"eslint-plugin-n@^15.0.0", "eslint-plugin-n@^15.3.0":
+"eslint-plugin-n@^15.0.0", "eslint-plugin-n@15.3.0":
   "integrity" "sha512-IyzPnEWHypCWasDpxeJnim60jhlumbmq0pubL6IOcnk8u2y53s5QfT8JnXy7skjHJ44yWHRb11PLtDHuu1kg/Q=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-15.3.0.tgz"
   "version" "15.3.0"
@@ -588,7 +588,7 @@
     "resolve" "^1.22.1"
     "semver" "^7.3.7"
 
-"eslint-plugin-promise@^6.0.0":
+"eslint-plugin-promise@^6.0.0", "eslint-plugin-promise@^6.0.1":
   "integrity" "sha512-uM4Tgo5u3UWQiroOyDEsYcVMOo7re3zmno0IZmB5auxoaQNIceAbXEkSt8RNrKtaYehARHG06pYK6K1JhtP0Zw=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-6.0.1.tgz"
   "version" "6.0.1"
