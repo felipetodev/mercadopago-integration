@@ -497,7 +497,7 @@
     "eslint-plugin-react" "^7.31.7"
     "eslint-plugin-react-hooks" "^4.5.0"
 
-"eslint-config-standard@^17.0.0":
+"eslint-config-standard@17.0.0":
   "integrity" "sha512-/2ks1GKyqSOkH7JFvXJicu0iMpoojkwB+f5Du/1SC0PtBL+s8v30k9njRZ21pm2drKYm2342jFnGWzttxPmZVg=="
   "resolved" "https://registry.npmjs.org/eslint-config-standard/-/eslint-config-standard-17.0.0.tgz"
   "version" "17.0.0"
@@ -574,7 +574,7 @@
     "minimatch" "^3.1.2"
     "semver" "^6.3.0"
 
-"eslint-plugin-n@^15.0.0":
+"eslint-plugin-n@^15.0.0", "eslint-plugin-n@^15.3.0":
   "integrity" "sha512-IyzPnEWHypCWasDpxeJnim60jhlumbmq0pubL6IOcnk8u2y53s5QfT8JnXy7skjHJ44yWHRb11PLtDHuu1kg/Q=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-15.3.0.tgz"
   "version" "15.3.0"

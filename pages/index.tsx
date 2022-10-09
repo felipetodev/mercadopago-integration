@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import Script from 'next/script'
 
 const Home: NextPage = () => {
-	const [type, setType] = useState<string>('payment')
+	const [type, setType] = useState<'payment' | 'subscription'>('payment')
 	const { data, handlePayment, handleLoadScript, loading } = useMercadoPago({ type })
 	return (
 		<>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
 								name='fetchtype'
 								value='payment'
 								defaultChecked
-								onChange={e => setType(e.target.value)}
+								onChange={e => setType(e.target.value as 'payment')}
 							/>
 							payment
 						</label>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 								type='radio'
 								name='fetchtype'
 								value='subscription'
-								onChange={e => setType(e.target.value)}
+								onChange={e => setType(e.target.value as 'subscription')}
 							/>
 							subscription
 						</label>
