@@ -1,3 +1,10 @@
+/* eslint-disable no-unused-vars */
+declare global {
+  interface Window {
+    MercadoPago: any
+  }
+}
+
 export interface Urls {
   failure: string;
   pending: string;
