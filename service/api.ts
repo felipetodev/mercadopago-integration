@@ -17,7 +17,6 @@ const api = {
 	getSubscriptionLink: async (req: NextApiRequest, res: NextApiResponse) => {
 		try {
 			const subscription = await service(req).createSubscription()
-			console.log(subscription)
 			if (subscription.status >= 400) throw new Error(subscription.message)
 			return res.status(200).json(subscription)
 		} catch (error: any) {
