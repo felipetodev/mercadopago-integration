@@ -23,4 +23,3 @@ NEXT_PUBLIC_MERCADOPAGO_KEY=
 ```sh
 npm run dev
 ```
-# mercadopago-integration

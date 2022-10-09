@@ -15,10 +15,31 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  background-color: #c6e9fa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: #a8dffa;
+}
+
+small {
+  color: #009ee3;
+  margin-top: 20px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;

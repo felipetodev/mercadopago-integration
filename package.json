@@ -1,7 +1,9 @@
 {
   "name": "mercadopago-pro",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "@felipetodev",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +21,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "eslint-config-standard": "17.0.0",
     "typescript": "4.8.4"
   }
 }
