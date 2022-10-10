@@ -4,6 +4,7 @@ import { useState } from 'react'
 import useMercadoPago from '../hooks/useMercadoPago'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
+import QRCodeGenerator from '../components/QRCodeGenerator'
 
 const Home: NextPage = () => {
 	const [type, setType] = useState<'payment' | 'subscription'>('payment')
@@ -67,8 +68,11 @@ const Home: NextPage = () => {
 								</a>
 							</div>
 							<small>
-								👉 Abre el link en modo incógnito y continua la compra con un fake customer 👈
+								👉 Abre el link en modo incógnito y continua la compra con un test user 👈
 							</small>
+							{type === 'payment' && (
+								<QRCodeGenerator url={data.init_point} />
+							)}
 						</>
 					)}
 				</main>

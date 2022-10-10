@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  position: relative;
 }
 
 .main {
@@ -49,7 +50,7 @@
   font-size: 12px;
   bottom: 20px;
   right: 20px;
-  position: absolute;
+  position: fixed;
   background-color: #009ee3;
   padding: 4px 8px;
   border-radius: 9999px;
