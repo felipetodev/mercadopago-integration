@@ -16,23 +16,23 @@
   -H "Content-Type: application/json" \
   -H 'Authorization: Bearer TEST_ACCESS_TOKEN' \
   "https://api.mercadopago.com/users/test_user" \
-  -d '{"site_id":"MLC"}'
+  -d '{"site_id":"MLM"}'
 */
 
 export const seller = {
-	id: 1214167367,
-	nickname: 'TEST0LFSL2FC',
-	password: 'oGUCBbD50r',
+	id: 1214402080,
+	nickname: 'TEST1XBKZ5RS',
+	password: 'ye2hcBRuh1',
 	site_status: 'active',
-	email: 'test_user_23488907@testuser.com'
+	email: 'test_user_72008086@testuser.com'
 }
 
 export const customer = {
-	id: 1214168093,
-	nickname: 'TESTGZTXHHXY',
-	password: 'hxxIFnCVSE',
+	id: 1214401170,
+	nickname: 'TESTE3QU7FBP',
+	password: 'tj6AJCdqLU',
 	site_status: 'active',
-	email: 'test_user_70331275@testuser.com'
+	email: 'test_user_81030439@testuser.com'
 }
 
 export const cart = [
@@ -47,8 +47,8 @@ export const cart = [
 ]
 
 export const countryOpts = {
-	locale: 'es-CL',
-	currency: 'CLP'
+	locale: 'es-MX',
+	currency: 'MXN'
 }
 
 export const domain = 'https://mercadopago-integration.vercel.app'
