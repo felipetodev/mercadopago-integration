@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const Success: NextPage = () => {
+const Status: NextPage = () => {
 	const [response, setResponse] = useState<any | null>(null)
 
 	useEffect(() => {
@@ -33,4 +33,4 @@ const Success: NextPage = () => {
 	)
 }
 
-export default Success
+export default Status
