@@ -23,3 +23,9 @@ NEXT_PUBLIC_MERCADOPAGO_KEY=
 ```sh
 npm run dev
 ```
+
+## Docs
+
+[Mercadopago Checkout Pro Docs](https://www.mercadopago.cl/developers/es/docs/checkout-pro/landing).
+[GitHub checkout payment example repo](https://github.com/mercadopago/checkout-payment-sample).
+[DEV article by @NicolasCastroGarcia (spanish)](https://dev.to/nicolascastrogarcia/como-integrar-mercado-pago-a-tu-web-34al).
