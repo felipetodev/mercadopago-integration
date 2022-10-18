@@ -1,5 +1,5 @@
 import type { NextApiRequest } from 'next'
-import { countryOpts, domain } from '../mock'
+import { countryOpts, domain } from '../utils/constants'
 const URI = 'https://api.mercadopago.com'
 const API_PREFERENCES = `${URI}/checkout/preferences`
 const API_PREAPPROVAL = `${URI}/preapproval`

@@ -1,4 +1,4 @@
-import api from '../../service/api'
+import api from '../../services'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default async function handler (

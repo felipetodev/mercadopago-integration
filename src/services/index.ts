@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import service from './services'
+import service from './api'
 
 const api = {
 	getPaymentLink: async (req: NextApiRequest, res: NextApiResponse) => {

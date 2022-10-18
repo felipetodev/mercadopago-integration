@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { cart, countryOpts, customer } from '../mock'
-import { PUBLIC_KEY } from '../service/services'
+import { cart, countryOpts, customer } from '../utils/constants'
+import { PUBLIC_KEY } from '../services/api'
 import type { Payment } from '../types'
 
 const createCheckoutButton = (mp: any, preferenceId: string) => {
